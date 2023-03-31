@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="alphabet">Enter Alphabet:</label>
+    <input type="text" id="alphabet" name="alphabet">
+    <!-- <button onclick="sortAlphabet()">Sort Alphabet</button> -->
+    <button id="sortBtn">Sort Alphabet</button>
+    <p>Result Here: <span id="result"></span></p>
+
+    <script>
+//   function sortAlphabet() {
+//   var input = document.getElementById("alphabet").value;
+//   var array = input.split();
+//   array.sort();
+//   var sorted = array.join();
+//   let andResult = document.getElementById('result');
+//   andResult.textContent= array;
+// }
+
+    let sortAlpha = document.getElementById('sortBtn');
+    sortAlpha.addEventListener('click', () => {
+        let input = document.getElementById("alphabet").value;
+        let array = input.split();
+        array.sort();
+        // let sorted = array.join();
+        let andResult = document.getElementById('result');
+        andResult.textContent= array;
+
+    })
+
+
+                
+
+    </script>
+</body>
+</html>
