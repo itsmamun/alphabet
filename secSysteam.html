@@ -1,0 +1,24 @@
+<input type="text" id="inputText">
+<button onclick="countWord()">Count Word</button>
+
+
+
+function countWord() {
+  // Get the input element and the word to search for
+  var input = document.getElementById("inputText").value;
+  var word = "your-word-here";
+
+  // Split the input text into an array of words
+  var words = input.split(" ");
+
+  // Loop through the array and count the number of times the word appears
+  var count = 0;
+  for (var i = 0; i < words.length; i++) {
+    if (words[i] === word) {
+      count++;
+    }
+  }
+
+  // Display the count
+  alert("The word appears " + count + " times.");
+}
